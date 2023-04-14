@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* .back-animation {
+    filter: brightness(50%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+} */
+
+
+.BannerImage {
+    position: relative;
+    color: white;
+    border-radius: 50px;
+}
+
+.BannerImageNew {
+    border-radius: 50px;
+}
+
+.BannerTextlg {
+    position: absolute;
+    top: 48%;
+    /* left: 40%; */
+    left: 5%;
+    inline-size: 350px;
+    overflow-wrap: break-word;
+}
+
+.BannerTextmd {
+    position: absolute;
+    top: 38%;
+    left: 7%;
+    inline-size: 200px;
+    overflow-wrap: break-word;
+}
+
+.BannerTextsm {
+    position: absolute;
+    top: 43%;
+    /* left: 35%; */
+    left: 8%;
+    inline-size: 150px;
+}
+
+
+
+
+/*.CUBannerImage {
+    position: relative;
+    color: Black;
+}
+
+.BannerTextlg {
+    position: absolute;
+    text-align: center;
+    top: 48%;
+    left: 5%;
+    inline-size: 350px;
+    overflow-wrap: break-word;
+    color: black;
+}
+
+.BannerTextmd {
+    position: absolute;
+    top: 38%;
+    left: 7%;
+    inline-size: 200px;
+    overflow-wrap: break-word;
+    color: black;
+}
+
+.BannerTextsm {
+    position: absolute;
+    top: 43%;
+    left: 8%;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    color: black;
+}*/
+
+.SubmitButton {
+    display: block;
+    width: 100%;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.SubmitButton:hover {
+    color: white;
+    background-color: black;
+}
+
+input[type=text],
+input[type=email] {
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-radius: 0px;
+    background-color: transparent;
+    width: 100%;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    background-color: black;
+    color: white;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+input:focus::placeholder {
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border: solid rgba(0, 0, 0, .2);
+    border-top: .1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-radius: 0px;
+    border-width: 1px;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    background-color: transparent;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* textarea::placeholder {
+    color: black;
+} */
+
+textarea:focus::placeholder {
+    color: white;
+}
+
+textarea:focus {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+/* @media (min-aspect-ratio: 16/9){
+    .back-animation{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-animation{
+        width: 100;
+        height: auto;
+    }
+} */
+
+.Icon{
+    color: #353839;
+    width: 45px;
+    height: 45px;
+}
+
+.Twitter:hover{
+    color: #1d9bf0;
+    transition: 300ms ease-in-out;
+}
+
+.Facebook:hover{
+    color: #0165e1;
+    transition: 300ms ease-in-out;
+}
+
+.Linkedin:hover{
+    color: #0e76a8;
+    transition: 300ms ease-in-out;
+}
+
+@media (min-aspect-ratio: 16/9) {}
+
+@media (max-aspect-ratio: 16/9) {
+
+    iframe {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1120px),
+(orientation: landscape) {
+    input {
+        width: 100%;
+    }
+
+    iframe {
+        height: 520px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px),
+(orientation: landscape) {
+    input {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px),
+(orientation: landscape) {
+    input {
+        width: 100%;
+    }
+
+    iframe {
+        height: 520px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 450px),
+(orientation: landscape) {
+    input {
+        width: 100%;
+    }
+
+    iframe {
+        height: 520px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px),
+(orientation: landscape) {
+    iframe {
+        height: 510px;
+        width: 100%;
+    }
+}

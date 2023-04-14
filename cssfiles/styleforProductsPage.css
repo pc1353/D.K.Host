@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins';
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.BannerImage {
+    position: relative;
+    color: white;
+    border-radius: 50px;
+}
+
+.BannerImageNew {
+    border-radius: 50px;
+}
+
+.BannerTextlg {
+    position: absolute;
+    top: 48%;
+    /* left: 40%; */
+    left: 5%;
+    inline-size: 350px;
+    overflow-wrap: break-word;
+}
+
+.BannerTextmd {
+    position: absolute;
+    top: 38%;
+    left: 7%;
+    inline-size: 200px;
+    overflow-wrap: break-word;
+}
+
+.BannerTextsm {
+    position: absolute;
+    top: 43%;
+    /* left: 35%; */
+    left: 8%;
+    inline-size: 150px;
+}
+
+/* .Image {
+    border-radius: 25% 10%;
+} */
+
+.Card_2 {
+    animation-delay: 200ms;
+}
+
+.Card_3 {
+    animation-delay: 400ms;
+}
+
+.Card_4 {
+    animation-delay: 600ms;
+}
+
+.Card_5 {
+    animation-delay: 800ms;
+}
+
+.Card_6 {
+    animation-delay: 1000ms;
+}
+
+.Card_7 {
+    animation-delay: 1200ms;
+}
+
+.Card_8 {
+    animation-delay: 1400ms;
+}
+
+.Card_9 {
+    animation-delay: 1600ms;
+}
+
+.Card_10 {
+    animation-delay: 1800ms;
+}
+
+.Center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.Image:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+.ProductName:hover {
+    letter-spacing: 3px;
+    font-style: italic;
+    transition: all 700ms ease;
+    -webkit-transition: all 700ms ease;
+}
+
+.modal-content,
+.modal-header,
+.modal-footer {
+    background-color: transparent !important;
+    border: 0px !important;
+}
+
+.ModalImage {
+    max-width: 80vw;
+    max-height: 80vh;
+}
