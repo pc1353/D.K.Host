@@ -250,7 +250,7 @@
 </style>
 
 <body>  
-    <header>
+    <header id="header">
         <nav class="navbar navbar-expand-lg bg-light ">
             <div class="container-fluid">
                 <a class="navbar-brand ms-lg-5" href="./index.html">
@@ -605,6 +605,14 @@
             loop: false
         });
     </script>
+    <script>
+        window.onload = function() {
+            // Scroll to a specific element on the page
+            var element = document.getElementById("header");
+            element.scrollIntoView();
+        };
+    </script>
+
 
 </body>
 
