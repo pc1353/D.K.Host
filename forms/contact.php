@@ -55,10 +55,10 @@ if (!empty($errors)) {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->Username   = '@example.com';                     
-    $mail->Password   = 'secret';
+    $mail->Username   = 'aboutdkenterprise@gmail.com';                     
+    $mail->Password   = 'hxrylqrfvojyddcs';
 
-    $mail->setFrom('@example.com', 'D.K.Enterprise');
+    $mail->setFrom('aboutdkenterprise@gmail.com', 'D.K.Enterprise');
     $mail->addAddress($email, $first);
     $mail->isHTML(true);
     $mail->Subject = 'Thank you for contacting us';
@@ -88,11 +88,11 @@ if (!empty($errors)) {
     $cmail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $cmail->Port = 587;
 
-    $cmail->Username   = '@example.com';                     
-    $cmail->Password   = 'secret';
+    $cmail->Username   = 'aboutdkenterprise@gmail.com';                     
+    $cmail->Password   = 'hxrylqrfvojyddcs';
 
-    $cmail->setFrom('@example.com', 'D.K.Enterprise');
-    $cmail->addAddress('@example.com', 'D.K.Enterprise');
+    $cmail->setFrom('aboutdkenterprise@gmail.com', 'D.K.Enterprise');
+    $cmail->addAddress('aboutdkenterprise@gmail.com', 'D.K.Enterprise');
     $cmail->isHTML(true);
     $cmail->Subject = 'You have a new response from website';
     $cmail->Body = 'We have a new response from website.<br>'
