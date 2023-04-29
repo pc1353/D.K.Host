@@ -80,16 +80,6 @@
             </div>
         </nav>
     </header>
-
-
-
-    <!--<div class="row pt-5 BannerImage d-flex d-lg-block d-none">
-        <img class="BannerImageNew animate__animated animate__slideInRight" src="../images/contact3.jpeg" width="100%"
-            height="130px" alt="">
-        <h1>
-            <span class="BannerTextlg animate__animated animate__slideInLeft">Contact<wbr> Us</span>
-        </h1>
-    </div>-->
         
     <section class="after-head d-flex section-text-white position-relative">
         <div class="d-background" data-image-src="" data-parallax="scroll"></div>
@@ -108,39 +98,11 @@
 
 
     <div class="container-fluid MainDiv">
-
-        
-        <!-- <video loop autoplay muted plays-inline class="back-animation">
-            <source src="video.mp4" type="video/mp4">
-        </video> -->
-        <!-- <div class="row pt-3 CUBannerImage my-5 d-flex d-lg-block d-none">
-            <h1 class="d-flex mx-auto">
-                <span class="BannerTextlg animate__animated animate__slideInLeft">
-                    <strong><em>Reach<wbr> Us<wbr> Today</em></strong>
-                </span>w
-            </h1>
-        </div>
-
-        <div class="row pt-5 CUBannerImage my-5 d-flex d-md-block d-lg-none d-sm-none d-none">
-            <h1>
-                <span class="BannerTextmd animate__animated animate__slideInLeft">
-                    <strong><em>Reach<wbr> Us<wbr> Today</em></strong>
-                </span>
-            </h1>
-        </div>
-
-        <div class="row pt-5 CUBannerImage my-5 d-flex d-sm-block d-lg-none d-md-none">
-            <h2>
-                <span class="BannerTextsm animate__animated animate__slideInLeft">
-                    <strong><em>Reach<wbr> Us<wbr> Today</em></strong>
-                </span>
-            </h2>
-        </div> -->
         <div class="">
             <div
                 class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 g-5 my-5 justify-content-center">
                 <div class="animate__animated animate__slideInLeft">
-                    <form class="form" action="../forms/contact.php" onsubmit="sendEmail(); reset(); return false;" method="post">
+                    <form class="form" action="../forms/contact.php" method="post">
                         <div class="mb-4">
                             <input type="text" name="fn" class="form-control" id="firstname" aria-describedby="" required
                                 placeholder="FIRST NAME" ondrop="return false;" onpaste="return false;">
@@ -152,9 +114,6 @@
                         <div class="mb-4">
                             <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" required
                                 placeholder="EMAIL ID" ondrop="return false;" onpaste="return false;">
-                            <!-- <div id="emailHelp" class="form-text">
-                                We'll never share your email with anyone else.
-                            </div> -->
                         </div>
                         <div class="mb-4">
                             <input type="text" name="num" pattern="[1-9]{1}[0-9]{9}" id="phonenumber" class="form-control" required
@@ -299,48 +258,4 @@
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="DK Enterprise\parallax.js\parallax.js"></script>
-<!-- <script>
-    function sendEmail() {
-
-        let fn = document.getElementById("firstname").value;
-        let ln = document.getElementById("lastname").value;
-        let eml = document.getElementById("email").value;
-        let phnbr = document.getElementById("phonenumber").value;
-        let subj = document.getElementById("subject").value;
-        let msg = document.getElementById("message").value;
-
-        let body = 'Name: ' + fn + " " + ln + "<br>Email: " + eml + "<br>Contact Info: " + phnbr + "<br>Subject: " +
-            subj + "<br>Message: " + msg;
-
-        Email.send({
-            SecureToken: "0cd46ad4-42ec-453d-b340-829ff155603d",
-            To: "aboutdkenterprise@gmail.com",
-            From: eml,
-            Subject: "You have a new message from " + fn + " " + ln,
-            Body: body
-        }).then(message => {
-
-            if (message == 'OK') {
-                alert("mail sent successfully");
-            } else {
-                console.error(message);
-                alert("Error occured");
-            }
-        });
-    }
-</script> -->
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-<script>
-    var typed = new Typed('.autoInput', {
-        strings: ["Reach Us Today"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true
-    })
-</script> -->
-
-
-
 </html>

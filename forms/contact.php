@@ -1,6 +1,6 @@
 <?php
 
-require "vendor/autoload.php";
+require "../vendor/autoload.php";
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
@@ -62,10 +62,10 @@ if (!empty($errors)) {
     $mail->addAddress($email, $first);
     $mail->isHTML(true);
     $mail->Subject = 'Thank you for contacting us';
-    $mail->Body = 'Dear' .$first . $last . ','.'<br>'.   
+    $mail->Body = 'Dear ' .$first . ' '. $last . ','.'<br>'.   
                 'Thank you for contacting us. We appreciate your interest in our services/products and we are delighted to receive your inquiry. We have received your message and our team will be reviewing it shortly.'.'<br>'.
                 
-                'We aim to respond to all inquiries within 2 bussiness days, so please expect to hear back from us soon. If your inquiry is urgent, please feel free to call us on 9428570608 and we will be happy to assist you immediately.'.'<br>'.
+                'We aim to respond to all inquiries within 2 bussiness days, so please expect to hear back from us soon. If your inquiry is urgent, please feel free to call us on +919428570608 and we will be happy to assist you immediately.'.'<br>'.
                                 
                 'We take pride in providing excellent customer service and we are committed to answering all of your questions in a timely and satisfactory manner. We look forward to the opportunity to serve you and we thank you once again for considering our company.'.'<br><br>'.
                                 
@@ -76,7 +76,7 @@ if (!empty($errors)) {
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
-        header("Location: ./Pages/ContactUs.html");
+        header("Location: ../Pages/ContactUs.html");
     }
 
 
@@ -96,13 +96,11 @@ if (!empty($errors)) {
     $cmail->isHTML(true);
     $cmail->Subject = 'You have a new response from website';
     $cmail->Body = 'We have a new response from website.<br>'
-    .'Name:'.$first.$last.'<br>'.'Email:'.$email.'<br>'.'Number:'.$number.'<br>'.'Subject:'.$subject.'<br>'.'Message:'.$message;
+    .'Name: '.$first.' '.$last.'<br>'.'Email: '.$email.'<br>'.'Number: '.$number.'<br>'.'Subject: '.$subject.'<br>'.'Message: '.$message;
 
     if(!$cmail->send()) {
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $cmail->ErrorInfo;
-    } else {
-        
     }
 }
 ?>
