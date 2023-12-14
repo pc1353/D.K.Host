@@ -260,40 +260,25 @@
         var element = document.getElementById("header");
         element.scrollIntoView();
     };
-    // function sendEmail() {
-    //     let email = document.getElementById("email").value;
-    //     Email.send({
-    //         Host: "smtp.gmail.com",
-    //         Username: "aboutdkenterprise@gmail.com",
-    //         // Password: "62CAE32AE5B32862905AAF4379B568FE09C8",
-    //         // Password: "aptu xsop ebmk idgh",
-    //         Password: "pranav@1353",
-    //         // Password: "c0371e6a-1de4-443d-af5b-126575c7b2b8",
-    //         To: email,
-    //         From: "aboutdkenterprise@gmail.com",
-    //         Subject: "Thank you for contacting us",
-    //         Body: "Well that was easy!!",
-    //     })
-    //         .then(function (message) {
-    //             console.log("mail sent successfully", message)
-    //             alert("mail sent successfully")
-    //         })
-    //         .catch(function (error) {
-    //             console.log("mail not sent", error)
-    //             alert("mail not sent")
-    //         });
-    // }
     function sendEmail() {
         (function () {
             emailjs.init("UmDcsKz0pMasD7a4l");
         })();
         var firstname = document.getElementById("firstname").value;
         var lastname = document.getElementById("lastname").value;
+        var email = document.getElementById("email").value;
+        var number = document.getElementById("phonenumber").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
         var body = "Dear " + firstname + " " + lastname + ",\n" +
             "Thank you for contacting us. We appreciate your interest in our services/products, and we are delighted to receive your inquiry. We have received your message, and our team will be reviewing it shortly.\n" +
             "We aim to respond to all inquiries within 2 business days, so please expect to hear back from us soon. If your inquiry is urgent, please feel free to call us on +919428570608, and we will be happy to assist you immediately.\n" +
             "We take pride in providing excellent customer service and are committed to answering all of your questions in a timely and satisfactory manner. We look forward to the opportunity to serve you, and we thank you once again for considering our company.\n\n" +
             "Best regards,\nD.K.Enterprise\n";
+
+
+        var Body = "We have a new response from website.\n" +  
+            "Name: " + firstname + " " + lastname + "\n" + "Email: " + email + "\n" + "Number: "+ number + "\n" + "Subject: " + subject + "\n" + "Message: " + message;
 
         var params = {
             to: document.getElementById("email").value,
@@ -301,8 +286,23 @@
             message: body,
         };
 
+        console.log(Body);
+
+        var docum = {
+            to: "aboutdkenterprise@gmail.com",
+            subject: "You have a new response from website",
+            message: Body,
+        };
+
+        
         var serviceId = "service_f1je9rq";
         var templateId = "template_nfakcgd";
+
+        emailjs.send(serviceId, templateId, docum)
+            .then(res => {
+                console.log("Sent the mail to aboutdkenterprise@gmail.com")
+            })
+            .catch();
 
         emailjs.send(serviceId, templateId, params)
             .then(res => {
